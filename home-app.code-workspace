@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../home-app"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
+}
