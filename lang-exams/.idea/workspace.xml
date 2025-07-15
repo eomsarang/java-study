@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6543dc9c-9331-4917-8559-c8e73e1046a3" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/google-java-format.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/study/lang/literal/Exam02.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/study/lang/literal/Exam02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +16,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
@@ -43,9 +46,27 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.lang-exams:app [:app:study.lang.operator.Exam01.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.operator.Exam02.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.operator.Exam03.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.operator.Exam04.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.operator.Exam05.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.operator.Exam06.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.operator.Exam08.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.operator.Exam09.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.operator.Exam10.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.operator.Exam11.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.operator.Exam12.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.operator.Exam13.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.operator.Exam14.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.operator.Exam15.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.operator.Exam16.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.operator.Exam17.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.operator.Exam19.main()].executor": "Run",
     "Gradle.lang-exams:app [:app:study.lang.variable.Exam15.main()].executor": "Run",
     "Gradle.lang-exams:app [:app:study.lang.variable.Exam16.main()].executor": "Run",
     "Gradle.lang-exams:app [:app:study.lang.variable.Exam17.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.variable.Exam18.main()].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -57,6 +78,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="study.lang.operator" />
       <recent name="study.lang.variable" />
     </key>
   </component>
