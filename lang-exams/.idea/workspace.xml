@@ -24,9 +24,6 @@
       </list>
     </option>
   </component>
-  <component name="FormatOnSaveOptions">
-    <option name="myRunOnSave" value="true" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -46,6 +43,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.lang-exams:app [:app:study.lang.control.Exam01.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.control.Exam02.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.control.Exam10.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.control.Exam11.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.control.Exam12.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.control.Exam13.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.control.Exam14.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.control.Exam15.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.control.Exam16.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.control.Exam17.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.control.Exam18.main()].executor": "Run",
     "Gradle.lang-exams:app [:app:study.lang.operator.Exam01.main()].executor": "Run",
     "Gradle.lang-exams:app [:app:study.lang.operator.Exam02.main()].executor": "Run",
     "Gradle.lang-exams:app [:app:study.lang.operator.Exam03.main()].executor": "Run",
@@ -70,14 +78,14 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "code.cleanup.on.save": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/eomsarang/git/java-study/lang-exams",
-    "settings.editor.selected.configurable": "preferences.sourceCode"
+    "settings.editor.selected.configurable": "actions.on.save"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="study.lang.control" />
       <recent name="study.lang.operator" />
       <recent name="study.lang.variable" />
     </key>
