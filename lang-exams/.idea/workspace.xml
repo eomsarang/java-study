@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6543dc9c-9331-4917-8559-c8e73e1046a3" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/study/lang/control/Exam19.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/study/lang/control/Exam19.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +24,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -54,6 +58,16 @@
     "Gradle.lang-exams:app [:app:study.lang.control.Exam16.main()].executor": "Run",
     "Gradle.lang-exams:app [:app:study.lang.control.Exam17.main()].executor": "Run",
     "Gradle.lang-exams:app [:app:study.lang.control.Exam18.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.method.Exam01.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.method.Exam02.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.method.Exam03.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.method.Exam04.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.method.Exam05.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.method.Exam06.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.method.Exam07.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.method.Exam08.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.method.Exam09.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.method.Exam10.main()].executor": "Run",
     "Gradle.lang-exams:app [:app:study.lang.operator.Exam01.main()].executor": "Run",
     "Gradle.lang-exams:app [:app:study.lang.operator.Exam02.main()].executor": "Run",
     "Gradle.lang-exams:app [:app:study.lang.operator.Exam03.main()].executor": "Run",
@@ -85,6 +99,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="study.lang.method" />
       <recent name="study.lang.control" />
       <recent name="study.lang.operator" />
       <recent name="study.lang.variable" />

@@ -22,7 +22,7 @@ public class Exam19 {
     for (Object value : list) {
       System.out.println(value);
     }
-    
+
     // 위 enhanced for 문은 다음 문장으로 변경된다.
 //    Iterator iterator = list.iterator();
 //    while (iterator.hasNext()) {
