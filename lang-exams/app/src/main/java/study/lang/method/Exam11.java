@@ -4,61 +4,45 @@ package study.lang.method;
 public class Exam11 {
 
   public static void main(String[] args) {
-    String str = new String("Hello!");
-    print(str);
+    // Auto-boxing
+    // - primitive type의 값을 자동으로 Wrapper 객체로 만드는 것.
+    // - 레퍼런스에 할당하는 경우 auto-boxing을 수행한다.
+    // Auto-unboxing
+    // - Wrapper 객체를 primitive type의 값으로 자동 변환하는 것.
+    // - Wrapper 객체를 primitive type의 변수에 할당하는 경우 auto-unboxing을 수행한다.
 
-    int i = 100; // i 변수는 객체 주소가 아니다. 그래서 레퍼런스 변수인 obj 에서 받을 수 없다.
-    // 해결책? int 를 객체에 저장한 후 그 객체 주소를 obj에 넘긴다.
-    Integer obj = Integer.valueOf(i); // Integer 객체를 만들어서 i 값을 담은 후에 그 주소를 리턴
-    print(obj);
-
-    // Primitive 타입의 값은 객체가 아니기 때문에 Object 레퍼런스에 넘길 수 없는 문제가 있다.
-    // 이 문제를 해결하고자 Primitive 타입의 값을 객체로 담을 수 있도록 특별한 클래스를 추가하였다.
-    // byte     ---> java.lang.Byte
-    // short    ---> java.lang.Short
-    // int      ---> java.lang.Integer
-    // long     ---> java.lang.Long
-    // float    ---> java.lang.Float
-    // double   ---> java.lang.Double
-    // boolean  ---> java.lang.Boolean
-    // char     ---> java.lang.Short.Character
-    // 이 클래스의 역할이 Primitive 값을 객체에 담는 일을 하기 때문에 "Wrapper 클래스"라 부른다.
-
-    // Wrapper 클래스 사용법
     byte b = 100;
-    Byte byteObj = Byte.valueOf(b); // Primitive 타입의 값을 객체에 저장
-    byte bb = byteObj.byteValue(); // 객체에 저장된 Primitive 타입의 값을 꺼내기
-
     short s = 100;
-    Short shortObj = Short.valueOf(s); // Primitive 타입의 값을 객체에 저장
-    short ss = shortObj.shortValue(); // 객체에 저장된 Primitive 타입의 값을 꺼내기
-
-    int i2 = 100;
-    Integer intObj = Integer.valueOf(i2); // Primitive 타입의 값을 객체에 저장
-    int ii = intObj.intValue(); // 객체에 저장된 Primitive 타입의 값을 꺼내기
-
-    long l = 100L;
-    Long longObj = Long.valueOf(l); // Primitive 타입의 값을 객체에 저장
-    long ll = longObj.longValue(); // 객체에 저장된 Primitive 타입의 값을 꺼내기
-
-    float f = 3.14f;
-    Float floatObj = Float.valueOf(f); // Primitive 타입의 값을 객체에 저장
-    float ff = floatObj.floatValue(); // 객체에 저장된 Primitive 타입의 값을 꺼내기
-
-    double d = 3.14;
-    Double doubleObj = Double.valueOf(d); // Primitive 타입의 값을 객체에 저장
-    double dd = doubleObj.doubleValue(); // 객체에 저장된 Primitive 타입의 값을 꺼내기
-
+    int i = 100;
+    long l = 100;
+    float f = 100.0f;
+    double d = 100.0;
     boolean bool = true;
-    Boolean booleanObj = Boolean.valueOf(bool); // Primitive 타입의 값을 객체에 저장
-    boolean bool2 = booleanObj.booleanValue(); // 객체에 저장된 Primitive 타입의 값을 꺼내기
-
     char c = 'A';
-    Character charObj = Character.valueOf(c); // Primitive 타입의 값을 객체에 저장
-    char cc = charObj.charValue(); // 객체에 저장된 Primitive 타입의 값을 꺼내기
+
+    Object obj;
+
+    // 1) 할당문 실행 - auto-boxing / auto-unboxing
+    obj = b; // auto-boxing: 컴파일러는 다음 문장으로 변환한다. ==> obj = Byte.valueOf(b)
+    System.out.println(obj.getClass());
+    byte bb = (byte) obj; // auto-unboxing: 컴파일러는 다음 문장으로 변환한다. bb = ((Byte) obj).byteValue();
+    System.out.println(bb);
+
+    System.out.println("------------------------");
+
+    // 2) 메서드 호출 - auto-boxing / auto-unboxing
+    info(b); // ==> info(Byte.valueOf(b))
+    info(s); // ==> info(Short.valueOf(s))
+    info(i); // ==> info(Integer.valueOf(i))
+    info(l); // ==> info(Long.valueOf(l))
+    info(f); // ==> info(Float.valueOf(f))
+    info(d); // ==> info(Double.valueOf(d))
+    info(bool); // ==> info(Boolean.valueOf(bool))
+    info(c); // ==> info(Character.valueOf(c))
   }
 
-  static void print(Object obj) {
-    System.out.println(obj);
+  static void info(Object obj) {
+    System.out.println(obj.getClass());
   }
+
 }
