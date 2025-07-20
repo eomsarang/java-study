@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6543dc9c-9331-4917-8559-c8e73e1046a3" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/study/lang/method/Exam11.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/study/lang/method/Exam11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/study/lang/method/Exam18.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/study/lang/method/Exam18.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +104,12 @@
     "Gradle.lang-exams:app [:app:study.lang.method.Exam13.main()].executor": "Run",
     "Gradle.lang-exams:app [:app:study.lang.method.Exam14.main()].executor": "Run",
     "Gradle.lang-exams:app [:app:study.lang.method.Exam15.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.method.Exam18.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.method.Exam19.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.method.Exam20.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.method.Exam21.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.method.Exam22.main()].executor": "Run",
+    "Gradle.lang-exams:app [:app:study.lang.method.Exam23.main()].executor": "Run",
     "Gradle.lang-exams:app [:app:study.lang.operator.Exam01.main()].executor": "Run",
     "Gradle.lang-exams:app [:app:study.lang.operator.Exam02.main()].executor": "Run",
     "Gradle.lang-exams:app [:app:study.lang.operator.Exam03.main()].executor": "Run",
@@ -129,6 +133,7 @@
     "Gradle.lang-exams:app [:app:study.lang.variable.Exam18.main()].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/eomsarang/git/java-study/lang-exams",
