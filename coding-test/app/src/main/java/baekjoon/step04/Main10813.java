@@ -2,7 +2,7 @@ package baekjoon.step04;
 
 import java.util.Scanner;
 
-public class Main10810 {
+public class Main10813 {
 
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
@@ -11,15 +11,20 @@ public class Main10810 {
     int m = sc.nextInt();
 
     int[] arr = new int[n];
+    for (int i = 0; i < n; i++) {
+      arr[i] = i;
+    }
 
     for (int idx = 0; idx < m; idx++) {
+
       int i = sc.nextInt();
       int j = sc.nextInt();
-      int k = sc.nextInt();
 
-      for (int no = i - 1; no < j; no++) { // 인덱스 보정이 필요하다
-        arr[no] = k;
-      }
+      int indexi = arr[i];
+      int indexj = arr[j];
+
+      arr[i] = indexj;
+      arr[j] = indexi;
     }
 
     for (int value : arr) {
