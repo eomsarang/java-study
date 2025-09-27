@@ -1,18 +1,17 @@
-package baekjoon.step16;
+package baekjoon.step20;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main15649 {
+public class Main15650 {
 
   static int N, M;
-  static boolean[] visited;
   static int[] arr;
   static StringBuilder sb = new StringBuilder();
 
-  public static void dfs(int depth) {
+  public static void dfs(int depth, int start) {
     if (depth == M) {
       for (int i = 0; i < M; i++) {
         sb.append(arr[i]).append(" ");
@@ -21,13 +20,9 @@ public class Main15649 {
       return;
     }
 
-    for (int i = 1; i <= N; i++) {
-      if (!visited[i]) {
-        visited[i] = true;
-        arr[depth] = i;
-        dfs(depth + 1);
-        visited[i] = false;
-      }
+    for (int i = start; i <= N; i++) {
+      arr[depth] = i;
+      dfs(depth + 1, i + 1);
     }
   }
 
@@ -38,10 +33,9 @@ public class Main15649 {
     N = Integer.parseInt(st.nextToken());
     M = Integer.parseInt(st.nextToken());
 
-    visited = new boolean[N + 1];
     arr = new int[M];
 
-    dfs(0);
+    dfs(0, 1);
     System.out.print(sb);
   }
 }
