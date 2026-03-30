@@ -10,9 +10,9 @@ public class Main11012 {
 
   static class Event implements Comparable<Event> {
 
+    public int y;
     int x, y1, y2, type, sign;
 
-    // 점
     Event(int x, int y) {
       this.x = x;
       this.y1 = y;
@@ -87,7 +87,7 @@ public class Main11012 {
 
       Collections.sort(events);
 
-      tree = new int[100001 + 5]; // y 최대 100000
+      tree = new int[100001 + 5];
 
       long answer = 0;
 
