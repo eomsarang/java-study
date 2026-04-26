@@ -1,6 +1,8 @@
 package baekjoon.step52;
-import java.io.*;
-import java.util.*;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class Main10999 {
 
@@ -12,8 +14,8 @@ public class Main10999 {
       seg[node] += (r - l + 1) * lazy[node];
 
       if (l != r) {
-        lazy[node*2] += lazy[node];
-        lazy[node*2+1] += lazy[node];
+        lazy[node * 2] += lazy[node];
+        lazy[node * 2 + 1] += lazy[node];
       }
 
       lazy[node] = 0;
@@ -23,7 +25,9 @@ public class Main10999 {
   static void update(int node, int l, int r, int ql, int qr, long val) {
     propagate(node, l, r);
 
-    if (r < ql || qr < l) return;
+    if (r < ql || qr < l) {
+      return;
+    }
 
     if (ql <= l && r <= qr) {
       lazy[node] += val;
@@ -33,23 +37,27 @@ public class Main10999 {
 
     int mid = (l + r) / 2;
 
-    update(node*2, l, mid, ql, qr, val);
-    update(node*2+1, mid+1, r, ql, qr, val);
+    update(node * 2, l, mid, ql, qr, val);
+    update(node * 2 + 1, mid + 1, r, ql, qr, val);
 
-    seg[node] = seg[node*2] + seg[node*2+1];
+    seg[node] = seg[node * 2] + seg[node * 2 + 1];
   }
 
   static long query(int node, int l, int r, int ql, int qr) {
     propagate(node, l, r);
 
-    if (r < ql || qr < l) return 0;
+    if (r < ql || qr < l) {
+      return 0;
+    }
 
-    if (ql <= l && r <= qr) return seg[node];
+    if (ql <= l && r <= qr) {
+      return seg[node];
+    }
 
     int mid = (l + r) / 2;
 
-    return query(node*2, l, mid, ql, qr)
-        + query(node*2+1, mid+1, r, ql, qr);
+    return query(node * 2, l, mid, ql, qr)
+        + query(node * 2 + 1, mid + 1, r, ql, qr);
   }
 
   static void build(int node, int l, int r, long[] arr) {
@@ -59,10 +67,10 @@ public class Main10999 {
     }
 
     int mid = (l + r) / 2;
-    build(node*2, l, mid, arr);
-    build(node*2+1, mid+1, r, arr);
+    build(node * 2, l, mid, arr);
+    build(node * 2 + 1, mid + 1, r, arr);
 
-    seg[node] = seg[node*2] + seg[node*2+1];
+    seg[node] = seg[node * 2] + seg[node * 2 + 1];
   }
 
   public static void main(String[] args) throws Exception {
@@ -74,14 +82,14 @@ public class Main10999 {
     M = Integer.parseInt(st.nextToken());
     K = Integer.parseInt(st.nextToken());
 
-    long[] arr = new long[N+1];
+    long[] arr = new long[N + 1];
 
     for (int i = 1; i <= N; i++) {
       arr[i] = Long.parseLong(br.readLine());
     }
 
-    seg = new long[4*N];
-    lazy = new long[4*N];
+    seg = new long[4 * N];
+    lazy = new long[4 * N];
 
     build(1, 1, N, arr);
 
@@ -108,4 +116,4 @@ public class Main10999 {
 
     System.out.print(sb);
   }
-}}
+}
