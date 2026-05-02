@@ -1,0 +1,51 @@
+package programmers;
+
+public class step03 {
+
+  static class Solution {
+
+    public int solution(int[] schedules, int[][] timelogs, int startday) {
+      int n = schedules.length;
+      int answer = 0;
+
+      for (int i = 0; i < n; i++) {
+        int limit = addTenMinutes(schedules[i]);
+        boolean ok = true;
+
+        for (int d = 0; d < 7; d++) {
+          int day = (startday + d - 1) % 7 + 1;
+
+          // 토요일(6), 일요일(7)은 제외
+          if (day == 6 || day == 7) {
+            continue;
+          }
+
+          if (timelogs[i][d] > limit) {
+            ok = false;
+            break;
+          }
+        }
+
+        if (ok) {
+          answer++;
+        }
+      }
+
+      return answer;
+    }
+
+    private int addTenMinutes(int time) {
+      int hour = time / 100;
+      int minute = time % 100;
+
+      minute += 10;
+
+      if (minute >= 60) {
+        hour++;
+        minute -= 60;
+      }
+
+      return hour * 100 + minute;
+    }
+  }
+}
