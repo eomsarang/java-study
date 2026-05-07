@@ -1,6 +1,6 @@
 package programmers;
 
-public class step04 {
+public class test04 {
 
   static class Solution {
 
