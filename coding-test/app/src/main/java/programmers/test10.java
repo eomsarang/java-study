@@ -2,66 +2,69 @@ package programmers;
 
 import java.util.HashMap;
 
-class Solution {
+public class test10 {
 
-  public int solution(String[] friends, String[] gifts) {
+  static class Solution {
 
-    int n = friends.length;
+    public int solution(String[] friends, String[] gifts) {
 
-    HashMap<String, Integer> map = new HashMap<>();
+      int n = friends.length;
 
-    for (int i = 0; i < n; i++) {
-      map.put(friends[i], i);
-    }
+      HashMap<String, Integer> map = new HashMap<>();
 
-    int[][] give = new int[n][n];
+      for (int i = 0; i < n; i++) {
+        map.put(friends[i], i);
+      }
 
-    int[] giftScore = new int[n];
+      int[][] give = new int[n][n];
 
-    for (String g : gifts) {
+      int[] giftScore = new int[n];
 
-      String[] temp = g.split(" ");
+      for (String g : gifts) {
 
-      int from = map.get(temp[0]);
-      int to = map.get(temp[1]);
+        String[] temp = g.split(" ");
 
-      give[from][to]++;
+        int from = map.get(temp[0]);
+        int to = map.get(temp[1]);
 
-      giftScore[from]++;
+        give[from][to]++;
 
-      giftScore[to]--;
-    }
+        giftScore[from]++;
 
-    int[] nextGift = new int[n];
+        giftScore[to]--;
+      }
 
-    for (int i = 0; i < n; i++) {
+      int[] nextGift = new int[n];
 
-      for (int j = i + 1; j < n; j++) {
+      for (int i = 0; i < n; i++) {
 
-        int iToj = give[i][j];
-        int jToi = give[j][i];
+        for (int j = i + 1; j < n; j++) {
 
-        if (iToj > jToi) {
-          nextGift[i]++;
-        } else if (jToi > iToj) {
-          nextGift[j]++;
-        } else {
+          int iToj = give[i][j];
+          int jToi = give[j][i];
 
-          if (giftScore[i] > giftScore[j]) {
+          if (iToj > jToi) {
             nextGift[i]++;
-          } else if (giftScore[j] > giftScore[i]) {
+          } else if (jToi > iToj) {
             nextGift[j]++;
+          } else {
+
+            if (giftScore[i] > giftScore[j]) {
+              nextGift[i]++;
+            } else if (giftScore[j] > giftScore[i]) {
+              nextGift[j]++;
+            }
           }
         }
       }
+
+      int answer = 0;
+
+      for (int x : nextGift) {
+        answer = Math.max(answer, x);
+      }
+
+      return answer;
     }
-
-    int answer = 0;
-
-    for (int x : nextGift) {
-      answer = Math.max(answer, x);
-    }
-
-    return answer;
   }
 }
